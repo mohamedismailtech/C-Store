@@ -14,10 +14,10 @@ class Modal extends Component {
                                         <img src={this.props.modalInfo.img} alt='product' className='img-fluid'/>
                                         <h4>{this.props.modalInfo.name}</h4>
                                         <span className='mb-1'>${this.props.modalInfo.price}</span>
-                                        <button className='px-2 py-1 mr-1 btn btn-dark' onClick={()=>{
+                                        <button className='px-2 py-1 mr-1 btn btn-dark mb-1' onClick={()=>{
                                             this.props.closeModal()
                                         }}>Back to Shop</button>
-                                        <button className='px-2 py-1 btn btn-dark text-reset' onClick={()=> this.props.closeModal()}>
+                                        <button className='px-2 py-1 btn btn-dark text-reset mb-1' onClick={()=> this.props.closeModal()}>
                                             <Link to='/cart'>Go to cart</Link>
                                         </button>
                                     </div>
