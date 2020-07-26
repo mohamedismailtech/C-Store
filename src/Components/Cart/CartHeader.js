@@ -4,7 +4,7 @@ import React, {Component} from 'react';
 class CartHeader extends Component {
     render() { 
         return (  
-            <div className='cart-upper p-2 row text-center d-flex mx-auto'>
+            <div className='cart-upper p-2 row text-center d-none d-md-flex mx-auto'>
                 <div className='col'>
                     <h3>Product</h3>
                 </div>

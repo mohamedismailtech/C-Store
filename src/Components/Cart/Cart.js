@@ -14,19 +14,21 @@ class Cart extends Component {
                   (
                     <div>
                         <CartHeader/>
+                        <div className='row'>
                             {
                                 this.props.cart.map(item=>{
                                     return(
-                                        <CartItem key={item.id} 
-                                                  item = {item} 
-                                                  increaseQuantity = {this.props.increaseQuantity} 
-                                                  decreaseQuantity = {this.props.decreaseQuantity} 
-                                                  removeFromCart = {this.props.removeFromCart}
-                                        />         
-                                    )   
-                                })
+                                            <CartItem key={item.id} 
+                                                    item = {item} 
+                                                    increaseQuantity = {this.props.increaseQuantity} 
+                                                    decreaseQuantity = {this.props.decreaseQuantity} 
+                                                    removeFromCart = {this.props.removeFromCart}
+                                            />         
+                                        )   
+                                    })
                             }
-                            <hr/>
+                        </div>
+                        <hr/>
                         <CartFooter totalPrice = {this.props.totalPrice} productInfoReset = {this.props.productInfoReset}/>
                     </div>
                  )}   

@@ -37,7 +37,7 @@ code {
   color: orange;
 }
 .cart-item img{
-  width: 70%;
+  width: 50% !important;
   height: 100%;
   display: block;
 }
@@ -102,4 +102,12 @@ code {
 .modal a{
   color: white;
   text-decoration: none;
+}
+@media(max-width:730px){
+  .cart-footer-bottom ul{
+    justify-content: center !important;
+  }
+  .fs{
+    font-size: 20px  !important;
+  }
 }
