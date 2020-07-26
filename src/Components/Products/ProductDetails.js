@@ -24,17 +24,17 @@ class ProductDetails extends Component {
                                         {
                                         (!this.props.productDetails.inCart)?
                                         
-                                            <button className='px-3 py-2 mr-1 mt-md-5'  disabled={this.props.productDetails.inCart} onClick={()=>{
+                                            <button className='px-3 py-2 mr-1 mt-md-5 mb-1'  disabled={this.props.productDetails.inCart} onClick={()=>{
                                                 this.props.addToCart(this.props.productDetails.id)
                                             }}>Add to cart</button>
                                         :
-                                            <button className='px-3 py-2 mr-1 mt-md-5'  disabled={this.props.productDetails.inCart} onClick={()=>{
+                                            <button className='px-3 py-2 mr-1 mt-md-5 mb-1'  disabled={this.props.productDetails.inCart} onClick={()=>{
                                                 this.props.addToCart(this.props.productDetails.id)
                                             }}>In Cart</button>
                                         
                                         }
                                         <Link to='/'>
-                                            <button className='px-3 py-2'>Back to Products</button>
+                                            <button className='px-3 py-2 mb-1'>Back to Products</button>
                                         </Link>
                                     </div>
                                 </div>
