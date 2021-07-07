@@ -17,9 +17,11 @@ class Modal extends Component {
                                         <button className='px-2 py-1 mr-1 btn btn-dark mb-1' onClick={()=>{
                                             this.props.closeModal()
                                         }}>Back to Shop</button>
-                                        <button className='px-2 py-1 btn btn-dark text-reset mb-1' onClick={()=> this.props.closeModal()}>
-                                            <Link to='/cart'>Go to cart</Link>
-                                        </button>
+                                        <Link to='/cart'>
+                                            <button className='px-2 py-1 btn btn-dark text-reset mb-1' onClick={()=> this.props.closeModal()}>
+                                                    Go to cart
+                                            </button>
+                                        </Link>
                                     </div>
                                 </div>
                             </div>
