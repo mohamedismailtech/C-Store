@@ -24,6 +24,6 @@ reactJS, bootstrap, and firebase.
 
 
 <h3 align='center'>Mobile perspective</h3>
-<img src="https://i.ibb.co/chnn5Wp/shopMob.png" alt="shopMob" width="45%"> 
+<img src="https://i.ibb.co/chnn5Wp/shopMob.png" alt="shopMob" width="45%"> | <img src="https://i.ibb.co/f9n5dwW/product-Mob.png" alt="product-Mob" width="45%">
 
 
