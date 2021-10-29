@@ -243,15 +243,14 @@ class App extends Component {
   
   //filter the company of products
   productsCompanyFilter = (companyFilter) => {
-     productsCompanyFilter = (companyFilter) => {
-     let filteredProductsTemp = this.state.products.filter(product =>{
-      if(companyFilter === 'all'){
-        return true
+    let filteredProductsTemp = {}
+    if(companyFilter === 'all'){
+      this.setState({filteredProducts:Data})
+    } else {
+        filteredProductsTemp = this.state.products.filter(product =>{
+          return (product.type === companyFilter)
+        })
       }
-      else{
-        return (product.type === companyFilter)
-      }
-    })
     this.setState({filteredProducts:filteredProductsTemp})
   }
 
