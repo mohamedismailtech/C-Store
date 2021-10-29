@@ -227,20 +227,7 @@ class App extends Component {
   
   //filter the price of products
   productsPriceFilter = (event, newValue) => {
-    // let filteredProductsTemp = this.state.products.filter(product => {
-    //   if(priceFilter.endPrice === 'or less')
-    //    return (product.price <= priceFilter.startPrice)
-    //    else if (priceFilter.endPrice === '& Above'){
-    //     return (product.price >= priceFilter.startPrice)
-    //   }
-    //   else if(priceFilter.endPrice === 'reset'){
-    //     return (product.price > priceFilter.startPrice)
-    //   }
-    //   else{
-    //     return (product.price >= priceFilter.startPrice && product.price <= priceFilter.endPrice)
-    //   }
-    // })
-    // this.setState({filteredProducts:filteredProductsTemp})
+
     this.setState({priceRange:newValue});
     let min = newValue[0];
     let max = newValue[1];
@@ -256,16 +243,15 @@ class App extends Component {
   
   //filter the company of products
   productsCompanyFilter = (companyFilter) => {
-    let filteredProductsTemp = Data;
-    this.setState({filteredProducts:filteredProductsTemp})
-    if(typeFilter === 'reset'){
-        this.setState({filteredProducts:Data})
+     productsCompanyFilter = (companyFilter) => {
+     let filteredProductsTemp = this.state.products.filter(product =>{
+      if(companyFilter === 'reset'){
+        return true
       }
       else{
-         filteredProductsTemp = this.state.filteredProducts.filter(product =>{
-          return (product.type === typeFilter)
-        })
+        return (product.type === companyFilter)
       }
+    })
     this.setState({filteredProducts:filteredProductsTemp})
   }
 
