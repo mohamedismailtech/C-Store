@@ -245,7 +245,7 @@ class App extends Component {
   productsCompanyFilter = (companyFilter) => {
      productsCompanyFilter = (companyFilter) => {
      let filteredProductsTemp = this.state.products.filter(product =>{
-      if(companyFilter === 'reset'){
+      if(companyFilter === 'all'){
         return true
       }
       else{
