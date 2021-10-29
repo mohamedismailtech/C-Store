@@ -12,7 +12,7 @@ reactJS, bootstrap, and firebase.
 
 ## Live website
 
-c-store.netlify.app/
+<a href="c-store.netlify.app">c-store/</a>
 
 ## How it looks
 
