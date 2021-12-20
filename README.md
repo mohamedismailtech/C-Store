@@ -10,7 +10,7 @@ An ecommerce web application that helps you to buy clothes online easily.
 
 reactJS, bootstrap, and firebase.
 
-## Live website
+## Live website:
 
 <a href="https://c-store.netlify.app/">c-store</a>
 
