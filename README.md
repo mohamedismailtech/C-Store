@@ -12,18 +12,12 @@ reactJS, bootstrap, and firebase.
 
 ## Live website:
 
-<a href="https://c-store.netlify.app/">c-store</a>
+<a href="https://movietask1.netlify.app/">c-store</a>
 
-## How it looks
+## Structure:
+A) |-APP|- Add category page
+	|- Categories page 
+		|- category for each Category
+			 |- movie for each movie
 
-<h3 align='center'>Web perspective</h3>
-
-<img src="https://i.ibb.co/H74PbS4/login.png" alt="login" width="45%">  <img  src="https://i.ibb.co/qNstgMh/resgister.png" alt="resgister" width="45%"> 
-<img src="https://i.ibb.co/X71DNvB/shop.png" alt="shop" width="45%">  <img src="https://i.ibb.co/m0sktFx/cart.png" alt="cart" width="45%"> 
-<img src="https://i.ibb.co/202r9bD/PopUp.png" alt="PopUp" width="45%">  <img src="https://i.ibb.co/0rynF7X/product.png" alt="product" width="45%"> 
-
-
-<h3 align='center'>Mobile perspective</h3>
-|<img src="https://i.ibb.co/chnn5Wp/shopMob.png" alt="shopMob" width="40%"> | <img src="https://i.ibb.co/f9n5dwW/product-Mob.png" alt="product-Mob" width="40%"> |
-
-
+B) Store, actions, reducer, and actionTypes
